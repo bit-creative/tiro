@@ -2,7 +2,7 @@ import express from "express"
 import { ApolloServer } from "apollo-server-express"
 import connect from "./db"
 
-import typeDefs from "./schema/query"
+import typeDefs from "./schema"
 import resolvers from "./resolvers"
 
 const context = async req => {
