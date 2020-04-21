@@ -16,7 +16,7 @@ const server = new ApolloServer({
   typeDefs,
   resolvers,
   dataSources: () => ({
-    userAPI: new UserAPI(User),
+    User: new UserAPI(User),
   }),
   context,
 })

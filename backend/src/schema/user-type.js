@@ -5,6 +5,7 @@ const userTypeDef = gql`
     id: ID!
     firstName: String!
     lastName: String
+    email: String!
     createdAt: String!
     updatedAt: String!
     preferredPosition: String

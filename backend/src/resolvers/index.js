@@ -1,4 +1,4 @@
-import mutationResolver from "./mutation-resolver"
+import index from "./mutations"
 import feedResolver from "./feed-resolver"
 import jobSourceResolver from "./jobSource-resolver"
 import applicationBoardResolver from "./applicationBoard-resolver"
@@ -8,7 +8,7 @@ const resolvers = {
   Query: {
     hello: (_, __, ctx) => "Hello Modular Setup!!",
   },
-  Mutation: mutationResolver,
+  Mutation: index,
   Feed: feedResolver,
   JobSource: jobSourceResolver,
   ApplicationBoard: applicationBoardResolver,

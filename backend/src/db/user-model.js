@@ -3,11 +3,18 @@ import { createModel, ObjectId } from "./helpers"
 const userSchema = {
   firstName: {
     type: String,
-    required: true,
+    // required: true,
   },
   lastName: {
     type: String,
+    // required: true,
+  },
+  email: {
+    type: String,
     required: true,
+  },
+  status: {
+    type: String,
   },
   preferredPosition: { type: String },
   boards: [{ type: ObjectId, ref: "board" }],

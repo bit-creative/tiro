@@ -5,6 +5,7 @@ import { MongoDataSource } from "apollo-datasource-mongodb"
  * to provide custom business logic management
  *
  * @class UserAPI
+ * @property {Model} model
  */
 class UserAPI extends MongoDataSource {
   /**
@@ -22,11 +23,21 @@ class UserAPI extends MongoDataSource {
    * here, so we can know about the user making requests
    */
   initialize(config) {
-    this.context = config.context
+    super.initialize(config)
   }
 
   async getUserById(id) {
     return this.findOneById(id)
+  }
+
+  async create(user) {
+    console.log(this)
+    return this.model.create(user)
+  }
+
+  async find(filter) {
+    const result = await this.model.find(filter)
+    return result.length
   }
 
   //  TODO: create other business logic related to users
