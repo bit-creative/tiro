@@ -1,0 +1,18 @@
+{
+  "name": "tiro",
+  "version": "0.1.0",
+  "main": "index.js",
+  "private": true,
+  "repository": "git@github.com:bit-creative/tiro.git",
+  "author": "George Bockari <bitwhys@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "cz-conventional-changelog": "3.1.0",
+    "prettier": "^2.0.4"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
