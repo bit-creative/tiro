@@ -4,14 +4,20 @@ import connect from "./db"
 
 import typeDefs from "./schema"
 import resolvers from "./resolvers"
+import UserAPI from "./datasources/userAPI"
+import { User } from "./db"
 
 const context = async req => {
+  // FIXME: just for testing
   return { foo: "bar" }
 }
 
 const server = new ApolloServer({
   typeDefs,
   resolvers,
+  dataSources: () => ({
+    userAPI: new UserAPI(User),
+  }),
   context,
 })
 
