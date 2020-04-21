@@ -38,9 +38,9 @@ developers.
   application code
 
 ### Backend (Application Server)
-- Node: "I heard you like JavaScript dog... So I put JavaScript in your
+- __Node__: "I heard you like JavaScript dog... So I put JavaScript in your
   Front end & Back end so you can write JavaScript in your JavaScript"
-- Koa: Because I like doing things I have no idea how to do.
+- __Koa__: Because I like doing things I have no idea how to do.
 
 ### Build
 - __Webpack__: Because they told me it was zero config, and after 3
